@@ -1,0 +1,4 @@
+rootProject.name = 'freaky-portal'
+
+include 'freaky-web'
+include 'freaky-client'

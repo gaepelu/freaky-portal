@@ -36,3 +36,9 @@ task buildClient(type:NpmTask, dependsOn:'appNpmInstall'){
   description = "Compile client side folder for production"
   args = ['run','build']
 }
+
+task serveClient(type:NpmTask, dependsOn:'appNpmInstall'){
+  group = "application"
+  description = "Run serer in developer mode"
+  args = ['run','start']
+}
